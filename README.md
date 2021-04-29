@@ -11,4 +11,15 @@ Quem usa o cmd é nazista! Utilize o Powershell, ele é uma evolução do cmd e 
 #### Navegando nas pastas
 ##### Listar o que tem na pasta
 Utilize o comando `ls`
+
 ![comando ls](https://i.imgur.com/ffOOiaZ.gif)
+
+##### Mudar de pasta
+Utilize o comando `cd`
+
+![comando cd](https://i.imgur.com/Wi8O4le.gif)
+
+##### Criar pasta nova
+Utilize o comando `mkdir *****`
+
+![comando mkdir](https://i.imgur.com/ClODxW3.gif)
