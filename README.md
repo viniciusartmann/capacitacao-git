@@ -23,3 +23,12 @@ Utilize o comando `cd`
 Utilize o comando `mkdir *****`
 
 ![comando mkdir](https://i.imgur.com/ClODxW3.gif)
+
+##### Usando a linha de comando para programação
+A maior parte das linguagens de programação podem ser utilizadas a partir da linha de comando! Este é um jeito de programar que tira a dependência de IDEs.
+
+![prog](https://i.imgur.com/2VfbSTJ.gif)
+
+##### Teclas úteis
+* Utilize o `tab` para autocompletar nomes de arquivos e pastas
+* Utilize as setas para cima e para baixo para repetir comandos anteriores
