@@ -73,3 +73,7 @@ Utilize o comando `git push nome_do_remote nome_da_branch`. Ex.: `git push origi
 
 #### Baixando atualizações do remote
 Utilize o comando `git pull`
+
+Se as atualizações contidas no remote forem incompatíveis com o que está na sua máquina, você receberá uma mensagem de erro indicando qual é a incompatibilidade. Por isso, devemos ser cuidadosos com quais branches cada programador está editando e não criarmos modificações concorrentes.
+
+Em último caso, faça o push de suas branches e volte para o diretório que contém o repositório, delete a pasta e refaça o `git clone`
