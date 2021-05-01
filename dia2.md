@@ -38,3 +38,38 @@ Ele irá listar quais arquivos foram modificados desde o último commit.
 Para adicionar os arquivos modificados ou criados ao commit, utilize o comando `git add arquivo.txt` para cada arquivo listado em vermelho ("Untracked files" e "Changes not staged for commit") pelo comando `git status`. Se sentir segurança de que não há nenhum arquivo indesejado na pasta, utilize `git add .`, que adicionará todos os arquivos dela.
 
 #### Fazer o commit
+Cada commit tem uma etiqueta com data, hora, quem fez, e um comentário que o descreve. Quando for fazer um commit, pense bem nas atualizações que fez e monte uma frase curta que as descreva.
+Para fazer o commit: `git commit -m "adicionar funcionalidade de desistir do projeto"`
+
+### Branches
+Você pode criar uma versão paralela do projeto, podendo alterá-lo sem modificar a versão principal e, após finalizar as alterações, emergir as versões, gerando atualizações com segurança. O nome dado para uma versão é *branch*. Outra função de uma branch é separar o trabalho por programador ou equipe, cada programador desenvolvendo uma parte do código tem sua própria branch.
+
+#### Criando uma branch
+Utilize o comando `git branch nome_da_branch`
+#### Utilizando a branch nova
+Utilize o comando `git checkout nome_da_branch`
+
+Dentro desta branch, você pode fazer qualquer commit sem alterar as outras branches.
+
+#### Emergindo branches
+Utilize o `git checkout main` para retornar à branch principal (você pode fazer isso a qualquer momento, mesmo que não for fazer um merge).
+
+Utilize o comando `git merge nome_da_branch`. Você verá informações de quais arquivos foram atualizados.
+
+### Remotes
+Os repositórios de git de um projeto podem ser armazenados em um servidor remoto. Em boa parte dos casos, o GitHub fornece esta funcionalidade.
+Quando um repositório é clonado do GitHub, a configuração do servidor remoto é feita automaticamente, então podemos pular a primeira secção deste capítulo.
+
+Para listar os remotes de um repositório, utilize o comando `git remote`. Por padrão, os remotes do GitHub são chamados `origin`
+
+
+#### Adicionando um remote ao repositório já existente
+Crie um repositório no GitHub para conter seu projeto e copie o link dele. Ex.: https://github.com/aeromec/MDO-Aero/
+
+Utilize o comando `git remote add nome_do_remote link_do_remote`. Ex.: `git remote add origin https://github.com/aeromec/MDO-Aero/`
+
+#### Atualizando o remote
+Utilize o comando `git push nome_do_remote nome_da_branch`. Ex.: `git push origin main`
+
+#### Baixando atualizações do remote
+Utilize o comando `git pull`
