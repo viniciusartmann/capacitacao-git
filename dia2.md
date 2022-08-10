@@ -102,4 +102,12 @@ Utilize o comando `git pull`
 
 Se as atualizações contidas no remote forem incompatíveis com o que está na sua máquina, você receberá uma mensagem de erro indicando qual é a incompatibilidade. Por isso, devemos ser cuidadosos com quais branches cada programador está editando e não criarmos modificações concorrentes.
 
-Em último caso, faça o push de suas branches e volte para o diretório que contém o repositório, delete a pasta e refaça o `git clone`
+Em último caso, faça o push de suas branches e volte para o diretório que contém o repositório, delete a pasta e refaça o `git clone`.
+
+### Forks e Pull Requests
+
+Para contribuir com um projeto de terceiros, você pode criar um fork do projeto: uma cópia pessoal dele.
+
+![fork](imagens/fork.png)
+
+Assim, você criará um repositório no seu perfil com o mesmo nome do original. Faça `git clone` neste repositório e dentro dele, utilize o comando `git remote add upstream link_do_repositorio_original`. Após isso, você pode criar uma nova branch e realizar suas edições nela. Ao realizar o comando `git push`, você verá a opção de criar um pull request no repositório original.
