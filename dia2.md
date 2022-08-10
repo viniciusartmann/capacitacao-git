@@ -110,4 +110,6 @@ Para contribuir com um projeto de terceiros, você pode criar um fork do projeto
 
 ![fork](imagens/fork.png)
 
-Assim, você criará um repositório no seu perfil com o mesmo nome do original. Faça `git clone` neste repositório e dentro dele, utilize o comando `git remote add upstream link_do_repositorio_original`. Após isso, você pode criar uma nova branch e realizar suas edições nela. Ao realizar o comando `git push`, você verá a opção de criar um pull request no repositório original.
+Assim, você criará um repositório no seu perfil com o mesmo nome do original. Faça `git clone` neste repositório e dentro dele, utilize o comando `git remote add upstream link_do_repositorio_original`. Após isso, você pode criar uma nova branch e realizar suas edições nela. Ao realizar o comando `git push -u origin nome_da_nova_branch`, você verá a opção de criar um pull request no repositório original.
+
+![pr](imagens/pull-request.png)
